@@ -1,0 +1,26 @@
+[general]
+host = "::"
+port = 8080
+root = "/public"
+log-level = "error"
+compression = true
+compression-static = true
+cache-control-headers = true
+directory-listing = false
+redirect-trailing-slash = true
+page404 = "./404.html"
+page50x = "./50x.html"
+log-remote-address = false
+
+[[advanced.headers]]
+source = "**"
+[advanced.headers.headers]
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+
+[[advanced.headers]]
+source = "/assets/**/*"
+[advanced.headers.headers]
+Cache-Control = "public, max-age=3600"
