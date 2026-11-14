@@ -6,9 +6,9 @@ Keep utility descriptions in `src/data.mjs` aligned with the actual desktop rele
 
 All screenshots in `public/assets/media` are real app captures. Replace them with fresh captures when the app changes. Keep informative alternative text and intrinsic dimensions. Do not add visitor tracking or remote fonts without revisiting the privacy page and security headers.
 
-Filters and dialogs enhance static links: the entire feature guide must remain usable without JavaScript. Native dialogs provide focus containment; Escape closes them and returns focus. The optional canvas is keyboard operable, bounded in memory, idle-aware, suspended offscreen/in background, and paused initially for reduced motion. Preserve those behaviors.
+Filters and dialogs enhance static links: the entire feature guide must remain usable without JavaScript. Native dialogs provide focus containment; Escape closes them and returns focus. The website uses reduced-motion and forced-color fallbacks. Keep custom scrollbars usable with touch, keyboard and native browser fallbacks.
 
-The `public/assets/site.mjs` file contains no desktop integration or global input hooks. It is an illustration inside one canvas. Keep all native behavior in the separate desktop app.
+The `public/assets/site.mjs` file contains no desktop integration or global input hooks. The browser motion illustration was removed in 0.2.2. Keep all native behavior in the separate desktop app.
 
 ## A new desktop release
 

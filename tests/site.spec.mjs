@@ -6,7 +6,7 @@ const pages = ['/', '/modules/', '/guide/', '/downloads/', '/privacy/', '/change
 test('toolkit filters and search work together and recover from no matches', async ({page}) => {
   const errors = []; page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
-  await expect(page.getByRole('heading', {level:1})).toContainText('Less friction.');
+  await expect(page.getByRole('heading', {level:1})).toContainText('Nexus for Windows');
   await expect(page.locator('.module-card:visible')).toHaveCount(13);
   await page.locator('[data-filter="cursor"]').click();
   await expect(page.locator('.module-card:visible')).toHaveCount(5);
@@ -75,20 +75,6 @@ test('download metadata, hashes and copy control are correct', async ({page, con
   await expect(page.getByRole('status')).toHaveText('Checksum copied.');
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(checksum);
 });
-test('motion illustration supports keyboard and reduced motion defaults', async ({page}) => {
-  await page.emulateMedia({reducedMotion:'reduce'});
-  await page.goto('/');
-  const pause = page.getByRole('button', {name:'Resume preview'});
-  await expect(pause).toHaveAttribute('aria-pressed','true');
-  await pause.click();
-  await expect(page.getByRole('button', {name:'Pause preview'})).toHaveAttribute('aria-pressed','false');
-  await page.locator('#trail-intensity').fill('80');
-  await expect(page.locator('#trail-value')).toHaveText('80%');
-  await page.locator('canvas').focus();
-  await page.keyboard.press('ArrowRight');
-  await page.keyboard.press('Enter');
-  await expect(page.locator('.demo-hint')).toBeHidden();
-});
 test('static feature guide and mobile navigation work without JavaScript', async ({browser}) => {
   const context = await browser.newContext({javaScriptEnabled:false, viewport:{width:375,height:812}});
   const page = await context.newPage();
@@ -124,6 +110,6 @@ test('unknown routes return the designed 404 page and security headers', async (
   const response = await request.get('/missing-page/');
   expect(response.status()).toBe(404);
   expect(response.headers()['content-security-policy']).toContain("script-src 'self'");
-  expect(await response.text()).toContain('This page');
+  expect(await response.text()).toContain('Page not found');
   expect((await request.post('/')).status()).toBe(405);
 });

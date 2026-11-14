@@ -21,7 +21,8 @@ for (const page of pages) {
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const url = match[1];
     if (/^(https?:|mailto:)/.test(url)) continue;
-    const [pathname, hash] = url.split('#');
+    const [rawPath, hash] = url.split('#');
+    const pathname = rawPath.split('?')[0];
     let target = pathname ? (pathname.startsWith('/') ? resolve(root, '.' + pathname) : resolve(dirname(page), pathname)) : page;
     if ((await stat(target)).isDirectory()) target = resolve(target, 'index.html');
     await stat(target);
@@ -35,7 +36,7 @@ for (const page of pages) {
 }
 assert.equal(await load(resolve(root, 'LICENSE.txt')), await readFile(new URL('../LICENSE', import.meta.url), 'utf8'));
 assert.match(await load(resolve(root, 'license/index.html')), /All rights reserved/);
-for (const key of ['installer','portable','checksums']) assert.ok(release[key].startsWith('https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/'));
+for (const key of ['installer','portable','checksums']) assert.ok(release[key].startsWith(`https://github.com/qemvix/nexus/releases/download/${release.tag}/`));
 let bytes = 0;
 for (const file of files) { bytes += (await stat(file)).size; assert.ok(!/\.(exe|zip|pdb|dll)$/i.test(file), 'Binary downloads belong in GitHub releases'); }
 assert.ok(bytes < 3_000_000, `Static payload exceeded budget: ${bytes}`);

@@ -1,12 +1,12 @@
 {
   "installer": {
     "filename": "Nexus-Setup.exe",
-    "bytes": 75508756,
-    "sha256": "8ebbbd66b4d6e4f64afe4e8ebecfa94edd00a8bfe1073cb2ee4468438356f693"
+    "bytes": 75546469,
+    "sha256": "c50ee893c508ffe0f15486e487e235a7503a973415efd6a641ff72b57d1ca23c"
   },
   "portable": {
-    "filename": "Nexus-0.2.1-win-x64-portable.zip",
-    "bytes": 69927858,
-    "sha256": "b6cf58431cf3eb2382cd0b1bd92637ae631d7e7771aada2236828e872c595abb"
+    "filename": "Nexus-0.2.2-win-x64-portable.zip",
+    "bytes": 69963136,
+    "sha256": "3b45a85514099d75d84c57f015c39a5750400c5dd999b8bd3c8abc3bdcce23c4"
   }
 }

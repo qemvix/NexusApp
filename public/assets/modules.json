@@ -5,8 +5,7 @@
       "name": "ScrollFlow",
       "family": "cursor",
       "symbol": "≋",
-      "tagline": "A little momentum goes a long way.",
-      "description": "Bring touchpad-style movement to a regular wheel with the Glide scrolling engine.",
+      "description": "Glide-powered smooth scrolling with per-app profiles and exclusions.",
       "features": [
         "Finite eased scrolling pulses",
         "Native touchpad gestures where supported",
@@ -20,16 +19,14 @@
       "shortcut": "Choose a toggle in Hotkeys",
       "limit": "Run ScrollFlow instead of standalone Glide. Native gestures require OS support; some applications coalesce fallback wheel packets.",
       "source": "https://github.com/qemvix/Glide",
-      "sourceLabel": "Built on Glide",
-      "featured": true
+      "sourceLabel": "Built on Glide"
     },
     {
       "id": "cursorblur",
       "name": "CursorBlur",
       "family": "cursor",
       "symbol": "↗",
-      "tagline": "Give movement a softer edge.",
-      "description": "The original CursorBlur executable, bundled with Nexus and managed with a single toggle.",
+      "description": "Runs the original CursorBlur engine with a single toggle.",
       "features": [
         "Original native CursorBlur engine",
         "No settings or Configure screen",
@@ -43,16 +40,14 @@
       "shortcut": "Choose a toggle in Hotkeys",
       "limit": "Uses its own defaults and timing; WPF FPS and reduced-motion controls do not change it. Disable it to stop motion. Requires the Microsoft Visual C++ v14 x64 runtime; missing dependencies show Runtime help.",
       "source": "https://github.com/qemvix/CursorBlur",
-      "sourceLabel": "Original CursorBlur",
-      "featured": true
+      "sourceLabel": "Original CursorBlur"
     },
     {
       "id": "cursoraura",
       "name": "Cursor Aura",
       "family": "cursor",
       "symbol": "◎",
-      "tagline": "Keep your pointer in view.",
-      "description": "Add glow, a soft halo, trails, particles or a spotlight around your pointer.",
+      "description": "Glow, trails, particles and a spotlight around the pointer.",
       "features": [
         "Five visual treatments",
         "Adjustable radius and opacity",
@@ -70,8 +65,7 @@
       "name": "ClickFX",
       "family": "cursor",
       "symbol": "◌",
-      "tagline": "Make every click visible.",
-      "description": "Ripples, rings and shockwaves for presentations, recordings or a more tactile desktop.",
+      "description": "Click overlays with ripples, rings or shockwaves.",
       "features": [
         "Distinct left and right click colors",
         "Ripple, ring and shockwave animations",
@@ -82,15 +76,14 @@
         "Mouse"
       ],
       "shortcut": "Choose a toggle in Hotkeys",
-      "limit": "Right-click color is fixed cyan in this preview. Custom audio files and independent animation timelines are not included."
+      "limit": "Right-click color is fixed cyan in this release. Custom audio files and independent animation timelines are not included."
     },
     {
       "id": "cursorlens",
       "name": "Cursor Lens",
       "family": "cursor",
       "symbol": "⊕",
-      "tagline": "Bring the small things closer.",
-      "description": "A mouse-following magnifier for fine print, details and presentations.",
+      "description": "Mouse-following screen magnification with adjustable zoom and framing.",
       "features": [
         "Real screen magnification",
         "Adjustable zoom and size",
@@ -109,8 +102,7 @@
       "name": "Float",
       "family": "desktop",
       "symbol": "▦",
-      "tagline": "Useful details. A small footprint on screen.",
-      "description": "Keep a live clock, CPU, memory and media controls in a compact floating widget.",
+      "description": "Clock, CPU, memory, media keys and optional weather in a floating widget.",
       "features": [
         "CPU, physical RAM and clock",
         "Windows and processor information",
@@ -129,8 +121,7 @@
       "name": "WindowGlide",
       "family": "desktop",
       "symbol": "▥",
-      "tagline": "Put your windows where they belong.",
-      "description": "Snap into useful layouts with shortcuts, eased movement and magnetic screen edges.",
+      "description": "Snap windows into presets or custom zones using global shortcuts.",
       "features": [
         "Half, quarter and third layouts",
         "Custom normalized zones via JSON",
@@ -149,8 +140,7 @@
       "name": "ClipVault",
       "family": "desktop",
       "symbol": "▤",
-      "tagline": "Find the text you just copied.",
-      "description": "Search, pin and reuse a bounded text and rich-text clipboard history.",
+      "description": "Search, pin and copy from an in-memory text and rich-text history.",
       "features": [
         "Search up to 100 text/RTF entries",
         "Pin and sort useful snippets",
@@ -169,8 +159,7 @@
       "name": "FocusFade",
       "family": "desktop",
       "symbol": "◧",
-      "tagline": "Let your current window stand out.",
-      "description": "Dim the desktop around the active window and give its edges a subtle highlight.",
+      "description": "Dim the area outside the active window.",
       "features": [
         "Click-through dimming",
         "Adjustable dim amount",
@@ -181,15 +170,14 @@
         "Window control"
       ],
       "shortcut": "Choose a toggle in Hotkeys",
-      "limit": "This preview dims surroundings; it does not automatically hide windows or provide app exclusions and animated focus transitions."
+      "limit": "This release dims surroundings; it does not automatically hide windows or provide app exclusions and animated focus transitions."
     },
     {
       "id": "screenruler",
       "name": "ScreenRuler",
       "family": "productivity",
       "symbol": "⌗",
-      "tagline": "A little more precision.",
-      "description": "Measure pixels, read coordinates and pick screen colors without opening a full design tool.",
+      "description": "Measure pixels, read coordinates and copy screen colors.",
       "features": [
         "Crosshair and ruler overlays",
         "Anchored rectangle measurement",
@@ -206,9 +194,8 @@
       "id": "keycast",
       "name": "KeyCast",
       "family": "productivity",
-      "symbol": "⌘",
-      "tagline": "Show the shortcut, keep the explanation simple.",
-      "description": "An ephemeral keyboard and mouse overlay for tutorials and recordings.",
+      "symbol": "⌨",
+      "description": "Display keys, shortcuts and mouse-button presses during recordings.",
       "features": [
         "Shortcut and all-keys modes",
         "Mouse-button display",
@@ -227,8 +214,7 @@
       "name": "Glassify",
       "family": "productivity",
       "symbol": "◇",
-      "tagline": "Let your workspace breathe.",
-      "description": "Adjust opacity and topmost behavior for active or selected applications.",
+      "description": "Change window opacity and always-on-top behavior.",
       "features": [
         "Window opacity control",
         "Active-window or process-list targeting",
@@ -246,8 +232,7 @@
       "name": "QuickDock",
       "family": "productivity",
       "symbol": "⊞",
-      "tagline": "Your everyday controls, one shortcut away.",
-      "description": "A floating dock for media, volume and the Windows controls you reach for most.",
+      "description": "Media and volume controls, with links to Windows settings.",
       "features": [
         "Volume and media keys",
         "Windows sound mixer link",
@@ -264,21 +249,15 @@
   "families": {
     "cursor": {
       "name": "Cursor & mouse",
-      "eyebrow": "FOLLOW YOUR FLOW",
-      "description": "Five ways to make movement, clicks and small details feel better.",
-      "number": "01"
+      "description": "Five ways to make movement, clicks and small details feel better."
     },
     "desktop": {
-      "name": "Your desktop",
-      "eyebrow": "MAKE SOME SPACE",
-      "description": "Four tools for windows, focus, useful information and the text you just copied.",
-      "number": "02"
+      "name": "Desktop",
+      "description": "Four tools for windows, focus, useful information and the text you just copied."
     },
     "productivity": {
-      "name": "Everyday tools",
-      "eyebrow": "KEEP IT WITHIN REACH",
-      "description": "Four quiet helpers for measuring, presenting and controlling your workspace.",
-      "number": "03"
+      "name": "Productivity",
+      "description": "Four quiet helpers for measuring, presenting and controlling your workspace."
     }
   }
 }

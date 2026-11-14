@@ -1,14 +1,14 @@
 # Nexus
 
-**Your desktop. Less friction.** The official website and public Windows downloads for Nexus, a modular native desktop utility hub by qemvix.
+**Windows desktop utilities.** The official website and public Windows downloads for Nexus, a modular native desktop utility hub by qemvix.
 
 This is **NexusApp**, the website repository. The desktop application lives in the separate `nexus` monorepo, with `nexus-cursor`, `nexus-desktop`, `nexus-productivity` and `nexus-core`. The desktop application is maintained in [qemvix/nexus](https://github.com/qemvix/nexus). This repository contains no desktop application source, credentials or local user settings.
 
 ## Download Nexus
 
-- [Windows installer — Nexus 0.2.1 preview](https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-Setup.exe)
-- [Portable Windows x64 ZIP](https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip)
-- [Checksums and release notes](https://github.com/qemvix/nexus/releases/tag/desktop-v0.2.1)
+- [Windows installer — Nexus 0.2.2 preview](https://github.com/qemvix/nexus/releases/download/desktop-v0.2.2/Nexus-Setup.exe)
+- [Portable Windows x64 ZIP](https://github.com/qemvix/nexus/releases/download/desktop-v0.2.2/Nexus-0.2.2-win-x64-portable.zip)
+- [Checksums and release notes](https://github.com/qemvix/nexus/releases/tag/desktop-v0.2.2)
 
 Windows 11 x64 is the primary tested platform. The preview is self-contained and unsigned. It requires no separate .NET runtime. Installation is per user. A matching checksum confirms file integrity, not publisher identity. Read the license and release notes before installing.
 
@@ -16,11 +16,11 @@ Windows 11 x64 is the primary tested platform. The preview is self-contained and
 
 - A responsive dark-glass landing page with real application captures.
 - Search and category filters for all 13 utilities, accessible detail dialogs and a complete static feature guide.
-- A lightweight, idle-aware pointer illustration with pause, keyboard controls and reduced-motion support.
+- Custom scrollbars with touch/forced-color fallbacks, visible focus states and reduced-motion support.
 - App screenshot gallery, installation guide, permissions explanation, privacy information, release notes, roadmap and supplied license.
 - Direct installer and portable links with SHA-256 values and copy controls.
 
-The browser illustration does not control the desktop. Product pages describe the actual 0.2.1 build and its current limitations. They do not claim guaranteed 240 FPS, persistent clipboard storage, macOS/Linux binaries or features that have not shipped.
+Product pages describe the actual 0.2.2 build and its current limitations. They do not claim guaranteed 240 FPS, persistent clipboard storage, macOS/Linux binaries or features that have not shipped.
 
 ## Deploy on Wasmer
 

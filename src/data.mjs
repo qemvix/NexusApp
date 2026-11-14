@@ -1,32 +1,26 @@
 export const release = {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "date": "2026-11-14",
   "platform": "Windows x64",
-  "tag": "desktop-v0.2.1",
+  "tag": "desktop-v0.2.2",
   "repository": "https://github.com/qemvix/nexus",
-  "installer": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-Setup.exe",
-  "portable": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip",
-  "checksums": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/SHA256SUMS.txt"
+  "installer": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.2/Nexus-Setup.exe",
+  "portable": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.2/Nexus-0.2.2-win-x64-portable.zip",
+  "checksums": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.2/SHA256SUMS.txt"
 };
 
 export const families = {
   "cursor": {
     "name": "Cursor & mouse",
-    "eyebrow": "FOLLOW YOUR FLOW",
-    "description": "Five ways to make movement, clicks and small details feel better.",
-    "number": "01"
+    "description": "Five ways to make movement, clicks and small details feel better."
   },
   "desktop": {
-    "name": "Your desktop",
-    "eyebrow": "MAKE SOME SPACE",
-    "description": "Four tools for windows, focus, useful information and the text you just copied.",
-    "number": "02"
+    "name": "Desktop",
+    "description": "Four tools for windows, focus, useful information and the text you just copied."
   },
   "productivity": {
-    "name": "Everyday tools",
-    "eyebrow": "KEEP IT WITHIN REACH",
-    "description": "Four quiet helpers for measuring, presenting and controlling your workspace.",
-    "number": "03"
+    "name": "Productivity",
+    "description": "Four quiet helpers for measuring, presenting and controlling your workspace."
   }
 };
 
@@ -36,8 +30,7 @@ export const modules = [
     "name": "ScrollFlow",
     "family": "cursor",
     "symbol": "≋",
-    "tagline": "A little momentum goes a long way.",
-    "description": "Bring touchpad-style movement to a regular wheel with the Glide scrolling engine.",
+    "description": "Glide-powered smooth scrolling with per-app profiles and exclusions.",
     "features": [
       "Finite eased scrolling pulses",
       "Native touchpad gestures where supported",
@@ -51,16 +44,14 @@ export const modules = [
     "shortcut": "Choose a toggle in Hotkeys",
     "limit": "Run ScrollFlow instead of standalone Glide. Native gestures require OS support; some applications coalesce fallback wheel packets.",
     "source": "https://github.com/qemvix/Glide",
-    "sourceLabel": "Built on Glide",
-    "featured": true
+    "sourceLabel": "Built on Glide"
   },
   {
     "id": "cursorblur",
     "name": "CursorBlur",
     "family": "cursor",
     "symbol": "↗",
-    "tagline": "Give movement a softer edge.",
-    "description": "The original CursorBlur executable, bundled with Nexus and managed with a single toggle.",
+    "description": "Runs the original CursorBlur engine with a single toggle.",
     "features": [
       "Original native CursorBlur engine",
       "No settings or Configure screen",
@@ -74,16 +65,14 @@ export const modules = [
     "shortcut": "Choose a toggle in Hotkeys",
     "limit": "Uses its own defaults and timing; WPF FPS and reduced-motion controls do not change it. Disable it to stop motion. Requires the Microsoft Visual C++ v14 x64 runtime; missing dependencies show Runtime help.",
     "source": "https://github.com/qemvix/CursorBlur",
-    "sourceLabel": "Original CursorBlur",
-    "featured": true
+    "sourceLabel": "Original CursorBlur"
   },
   {
     "id": "cursoraura",
     "name": "Cursor Aura",
     "family": "cursor",
     "symbol": "◎",
-    "tagline": "Keep your pointer in view.",
-    "description": "Add glow, a soft halo, trails, particles or a spotlight around your pointer.",
+    "description": "Glow, trails, particles and a spotlight around the pointer.",
     "features": [
       "Five visual treatments",
       "Adjustable radius and opacity",
@@ -101,8 +90,7 @@ export const modules = [
     "name": "ClickFX",
     "family": "cursor",
     "symbol": "◌",
-    "tagline": "Make every click visible.",
-    "description": "Ripples, rings and shockwaves for presentations, recordings or a more tactile desktop.",
+    "description": "Click overlays with ripples, rings or shockwaves.",
     "features": [
       "Distinct left and right click colors",
       "Ripple, ring and shockwave animations",
@@ -113,15 +101,14 @@ export const modules = [
       "Mouse"
     ],
     "shortcut": "Choose a toggle in Hotkeys",
-    "limit": "Right-click color is fixed cyan in this preview. Custom audio files and independent animation timelines are not included."
+    "limit": "Right-click color is fixed cyan in this release. Custom audio files and independent animation timelines are not included."
   },
   {
     "id": "cursorlens",
     "name": "Cursor Lens",
     "family": "cursor",
     "symbol": "⊕",
-    "tagline": "Bring the small things closer.",
-    "description": "A mouse-following magnifier for fine print, details and presentations.",
+    "description": "Mouse-following screen magnification with adjustable zoom and framing.",
     "features": [
       "Real screen magnification",
       "Adjustable zoom and size",
@@ -140,8 +127,7 @@ export const modules = [
     "name": "Float",
     "family": "desktop",
     "symbol": "▦",
-    "tagline": "Useful details. A small footprint on screen.",
-    "description": "Keep a live clock, CPU, memory and media controls in a compact floating widget.",
+    "description": "Clock, CPU, memory, media keys and optional weather in a floating widget.",
     "features": [
       "CPU, physical RAM and clock",
       "Windows and processor information",
@@ -160,8 +146,7 @@ export const modules = [
     "name": "WindowGlide",
     "family": "desktop",
     "symbol": "▥",
-    "tagline": "Put your windows where they belong.",
-    "description": "Snap into useful layouts with shortcuts, eased movement and magnetic screen edges.",
+    "description": "Snap windows into presets or custom zones using global shortcuts.",
     "features": [
       "Half, quarter and third layouts",
       "Custom normalized zones via JSON",
@@ -180,8 +165,7 @@ export const modules = [
     "name": "ClipVault",
     "family": "desktop",
     "symbol": "▤",
-    "tagline": "Find the text you just copied.",
-    "description": "Search, pin and reuse a bounded text and rich-text clipboard history.",
+    "description": "Search, pin and copy from an in-memory text and rich-text history.",
     "features": [
       "Search up to 100 text/RTF entries",
       "Pin and sort useful snippets",
@@ -200,8 +184,7 @@ export const modules = [
     "name": "FocusFade",
     "family": "desktop",
     "symbol": "◧",
-    "tagline": "Let your current window stand out.",
-    "description": "Dim the desktop around the active window and give its edges a subtle highlight.",
+    "description": "Dim the area outside the active window.",
     "features": [
       "Click-through dimming",
       "Adjustable dim amount",
@@ -212,15 +195,14 @@ export const modules = [
       "Window control"
     ],
     "shortcut": "Choose a toggle in Hotkeys",
-    "limit": "This preview dims surroundings; it does not automatically hide windows or provide app exclusions and animated focus transitions."
+    "limit": "This release dims surroundings; it does not automatically hide windows or provide app exclusions and animated focus transitions."
   },
   {
     "id": "screenruler",
     "name": "ScreenRuler",
     "family": "productivity",
     "symbol": "⌗",
-    "tagline": "A little more precision.",
-    "description": "Measure pixels, read coordinates and pick screen colors without opening a full design tool.",
+    "description": "Measure pixels, read coordinates and copy screen colors.",
     "features": [
       "Crosshair and ruler overlays",
       "Anchored rectangle measurement",
@@ -237,9 +219,8 @@ export const modules = [
     "id": "keycast",
     "name": "KeyCast",
     "family": "productivity",
-    "symbol": "⌘",
-    "tagline": "Show the shortcut, keep the explanation simple.",
-    "description": "An ephemeral keyboard and mouse overlay for tutorials and recordings.",
+    "symbol": "⌨",
+    "description": "Display keys, shortcuts and mouse-button presses during recordings.",
     "features": [
       "Shortcut and all-keys modes",
       "Mouse-button display",
@@ -258,8 +239,7 @@ export const modules = [
     "name": "Glassify",
     "family": "productivity",
     "symbol": "◇",
-    "tagline": "Let your workspace breathe.",
-    "description": "Adjust opacity and topmost behavior for active or selected applications.",
+    "description": "Change window opacity and always-on-top behavior.",
     "features": [
       "Window opacity control",
       "Active-window or process-list targeting",
@@ -277,8 +257,7 @@ export const modules = [
     "name": "QuickDock",
     "family": "productivity",
     "symbol": "⊞",
-    "tagline": "Your everyday controls, one shortcut away.",
-    "description": "A floating dock for media, volume and the Windows controls you reach for most.",
+    "description": "Media and volume controls, with links to Windows settings.",
     "features": [
       "Volume and media keys",
       "Windows sound mixer link",
@@ -296,7 +275,7 @@ export const modules = [
 export const faq = [
   [
     "Which Windows versions does Nexus support?",
-    "The current preview is Windows x64. Windows 11 is the primary tested platform; broader Windows 10 and mixed-DPI hardware validation is still pending. macOS and Linux binaries are not available."
+    "The current release is Windows x64. Windows 11 is the primary tested platform; broader Windows 10 and mixed-DPI hardware validation is still pending. macOS and Linux binaries are not available."
   ],
   [
     "Do I need to install .NET or run as administrator?",
@@ -332,10 +311,14 @@ export const faq = [
   ],
   [
     "Why does Windows say the publisher is unknown?",
-    "This preview is unsigned. The release does not carry an Authenticode publisher signature. Review the release notes and compare the supplied hashes; hashes alone do not establish a publisher identity."
+    "This release is unsigned. The release does not carry an Authenticode publisher signature. Review the release notes and compare the supplied hashes; hashes alone do not establish a publisher identity."
   ],
   [
     "Do I need an account or a subscription?",
     "There is no Nexus account system or subscription dependency in the app. Optional weather and publisher-configured update checks use the network when permitted. The official signed update feed and trusted key are included. Update checks require Network permission; daily checks are optional."
+  ],
+  [
+    "How do updates work?",
+    "In Settings & updates, choose Check for updates, then Download and install when a release is available. Nexus verifies the signed manifest and installer hash, updates the per-user installation and keeps your settings. Network permission is required; daily checks are optional."
   ]
 ];
