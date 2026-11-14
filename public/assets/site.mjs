@@ -1,5 +1,6 @@
 // Progressive enhancements: every feature and download remains a normal link without JavaScript.
 document.documentElement.classList.replace('no-js', 'js');
+const siteVersion = document.documentElement.dataset.version;
 const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -41,7 +42,7 @@ document.addEventListener('click', async event => {
     return;
   }
   try {
-    moduleRequest ??= fetch('/assets/modules.json?v=0.2.2').then(response => { if (!response.ok) throw new Error('Unavailable'); return response.json(); });
+    moduleRequest ??= fetch(`/assets/modules.json?v=${encodeURIComponent(siteVersion)}`).then(response => { if (!response.ok) throw new Error('Unavailable'); return response.json(); });
     const {modules: items} = await moduleRequest;
     const item = items.find(m => m.id === link.dataset.module);
     if (!item) throw new Error('Unknown feature');
@@ -60,7 +61,7 @@ const shots = {
 $$('[data-shot]').forEach(button => button.addEventListener('click', () => {
   $$('[data-shot]').forEach(other => other.setAttribute('aria-pressed', String(other === button)));
   const [title, caption] = shots[button.dataset.shot];
-  const path = `/assets/media/${button.dataset.shot}.png`;
+  const path = `/assets/media/${button.dataset.shot}.png?v=${encodeURIComponent(siteVersion)}`;
   $('#gallery-image').src = path;
   $('#gallery-image').alt = `Nexus ${title.toLowerCase()} screen, captured from the native app.`;
   $('#gallery-caption').textContent = `${title} — ${caption}`;

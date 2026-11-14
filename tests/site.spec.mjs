@@ -42,11 +42,11 @@ test('gallery and full-size screenshot dialog show real app captures', async ({p
   await page.goto('/');
   await page.getByRole('button', {name:'Permissions', exact:true}).click();
   const image = page.locator('#gallery-image');
-  await expect(image).toHaveAttribute('src', '/assets/media/nexus-permissions.png');
+  await expect(image).toHaveAttribute('src', `/assets/media/nexus-permissions.png?v=${release.version}`);
   await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth > 0)).toBeTruthy();
   await page.locator('#gallery-full').click();
   await expect(page.getByRole('dialog')).toBeVisible();
-  await expect(page.locator('dialog img')).toHaveAttribute('src', '/assets/media/nexus-permissions.png');
+  await expect(page.locator('dialog img')).toHaveAttribute('src', `/assets/media/nexus-permissions.png?v=${release.version}`);
   await page.keyboard.press('Escape');
 });
 test('mobile navigation works with escape and link activation', async ({page}) => {
