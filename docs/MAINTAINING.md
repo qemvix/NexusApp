@@ -12,9 +12,9 @@ The `public/assets/site.mjs` file contains no desktop integration or global inpu
 
 ## A new desktop release
 
-1. Build and test the application in the private `nexus` monorepo. Review its license and dependency notices. Do not move private desktop source or diagnostic data here.
+1. Build and test the application in the `nexus` monorepo. Review its license and dependency notices. Do not move private desktop source or diagnostic data here.
 2. Prepare the installer and portable ZIP. Record their byte sizes and SHA-256 values; put those values in `src/release-files.json`.
-3. Make a new **draft** GitHub release in this public repository using a versioned desktop tag. Upload the installer, portable ZIP, `SHA256SUMS.txt` and the desktop license. Keep desktop source archives out of public releases.
+3. Make a new **draft** GitHub release in qemvix/nexus using a versioned desktop tag. Upload the installer, portable ZIP, `SHA256SUMS.txt` and the desktop license. Keep desktop source archives out of public releases.
 4. Verify uploaded asset sizes/hashes. Publish the release, then check the exact download URLs without authentication. Never use an expiring or authenticated CI artifact URL for the website's primary download.
 5. Update `release` and copy in `src/data.mjs`, the changelog template, version labels and all applicable known limits. Rebuild and verify the site. Release assets and website checksums must agree.
 6. Push changes, wait for CI, and check the deployed download page. Do not mark the build signed until it has a verified Authenticode signature. Hashes do not identify the publisher.

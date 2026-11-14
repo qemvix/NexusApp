@@ -3,10 +3,10 @@ export const release = {
   "date": "2026-11-14",
   "platform": "Windows x64",
   "tag": "desktop-v0.2.1",
-  "repository": "https://github.com/qemvix/NexusApp",
-  "installer": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-Setup.exe",
-  "portable": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip",
-  "checksums": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/SHA256SUMS.txt"
+  "repository": "https://github.com/qemvix/nexus",
+  "installer": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-Setup.exe",
+  "portable": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip",
+  "checksums": "https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/SHA256SUMS.txt"
 };
 
 export const families = {

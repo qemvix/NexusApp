@@ -2,13 +2,13 @@
 
 **Your desktop. Less friction.** The official website and public Windows downloads for Nexus, a modular native desktop utility hub by qemvix.
 
-This is **NexusApp**, the website repository. The desktop application lives in the separate `nexus` monorepo, with `nexus-cursor`, `nexus-desktop`, `nexus-productivity` and `nexus-core`. That application source remains private. This repository contains no desktop application source, credentials or local user settings.
+This is **NexusApp**, the website repository. The desktop application lives in the separate `nexus` monorepo, with `nexus-cursor`, `nexus-desktop`, `nexus-productivity` and `nexus-core`. The desktop application is maintained in [qemvix/nexus](https://github.com/qemvix/nexus). This repository contains no desktop application source, credentials or local user settings.
 
 ## Download Nexus
 
-- [Windows installer — Nexus 0.2.1 preview](https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-Setup.exe)
-- [Portable Windows x64 ZIP](https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip)
-- [Checksums and release notes](https://github.com/qemvix/NexusApp/releases/tag/desktop-v0.2.1)
+- [Windows installer — Nexus 0.2.1 preview](https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-Setup.exe)
+- [Portable Windows x64 ZIP](https://github.com/qemvix/nexus/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip)
+- [Checksums and release notes](https://github.com/qemvix/nexus/releases/tag/desktop-v0.2.1)
 
 Windows 11 x64 is the primary tested platform. The preview is self-contained and unsigned. It requires no separate .NET runtime. Installation is per user. A matching checksum confirms file integrity, not publisher identity. Read the license and release notes before installing.
 
