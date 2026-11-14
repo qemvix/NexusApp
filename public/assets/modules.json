@@ -29,21 +29,21 @@
       "family": "cursor",
       "symbol": "↗",
       "tagline": "Give movement a softer edge.",
-      "description": "A motion trail made from your actual system cursor image, with speed-sensitive fade and tint.",
+      "description": "The original CursorBlur executable, bundled with Nexus and managed with a single toggle.",
       "features": [
-        "Real cursor image and hotspot",
-        "Interpolated movement trail",
-        "Adjustable fade, sensitivity, alpha and tint",
-        "Bounded samples and cached cursor shapes",
-        "Shared overlay frame-rate control"
+        "Original native CursorBlur engine",
+        "No settings or Configure screen",
+        "Starts and stops with its module",
+        "Duplicate-engine protection",
+        "Stops even if the Nexus host crashes"
       ],
       "permissions": [
         "Mouse"
       ],
       "shortcut": "Choose a toggle in Hotkeys",
-      "limit": "Reduced motion suppresses the effect. Actual frame rate depends on rendering load and display refresh.",
+      "limit": "Uses its own defaults and timing; WPF FPS and reduced-motion controls do not change it. Disable it to stop motion. Requires the Microsoft Visual C++ v14 x64 runtime; missing dependencies show Runtime help.",
       "source": "https://github.com/qemvix/CursorBlur",
-      "sourceLabel": "CursorBlur engine",
+      "sourceLabel": "Original CursorBlur",
       "featured": true
     },
     {

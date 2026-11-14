@@ -6,9 +6,9 @@ This is **NexusApp**, the website repository. The desktop application lives in t
 
 ## Download Nexus
 
-- [Windows installer — Nexus 0.2.0 preview](https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.0/Nexus-Setup.exe)
-- [Portable Windows x64 ZIP](https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.0/Nexus-0.2.0-win-x64-portable.zip)
-- [Checksums and release notes](https://github.com/qemvix/NexusApp/releases/tag/desktop-v0.2.0)
+- [Windows installer — Nexus 0.2.1 preview](https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-Setup.exe)
+- [Portable Windows x64 ZIP](https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip)
+- [Checksums and release notes](https://github.com/qemvix/NexusApp/releases/tag/desktop-v0.2.1)
 
 Windows 11 x64 is the primary tested platform. The preview is self-contained and unsigned. It requires no separate .NET runtime. Installation is per user. A matching checksum confirms file integrity, not publisher identity. Read the license and release notes before installing.
 
@@ -20,7 +20,7 @@ Windows 11 x64 is the primary tested platform. The preview is self-contained and
 - App screenshot gallery, installation guide, permissions explanation, privacy information, release notes, roadmap and supplied license.
 - Direct installer and portable links with SHA-256 values and copy controls.
 
-The browser illustration does not control the desktop. Product pages describe the actual 0.2.0 build and its current limitations. They do not claim guaranteed 240 FPS, persistent clipboard storage, macOS/Linux binaries or features that have not shipped.
+The browser illustration does not control the desktop. Product pages describe the actual 0.2.1 build and its current limitations. They do not claim guaranteed 240 FPS, persistent clipboard storage, macOS/Linux binaries or features that have not shipped.
 
 ## Deploy on Wasmer
 

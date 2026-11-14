@@ -1,22 +1,22 @@
 {
-  "version": "0.2.0",
-  "date": "2026-11-13",
+  "version": "0.2.1",
+  "date": "2026-11-14",
   "platform": "Windows x64",
-  "tag": "desktop-v0.2.0",
+  "tag": "desktop-v0.2.1",
   "repository": "https://github.com/qemvix/NexusApp",
-  "installer": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.0/Nexus-Setup.exe",
-  "portable": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.0/Nexus-0.2.0-win-x64-portable.zip",
-  "checksums": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.0/SHA256SUMS.txt",
+  "installer": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-Setup.exe",
+  "portable": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/Nexus-0.2.1-win-x64-portable.zip",
+  "checksums": "https://github.com/qemvix/NexusApp/releases/download/desktop-v0.2.1/SHA256SUMS.txt",
   "files": {
-    "portable": {
-      "sha256": "e9ffa41eea6e8ce5e267e2e5e458846d78d2057438e6ce4547d350c7031811de",
-      "bytes": 71525470,
-      "filename": "Nexus-0.2.0-win-x64-portable.zip"
-    },
     "installer": {
-      "sha256": "3b27a3ece263da65e8b85d051efb03b564c4f6f9af58df242259e37e6222a769",
-      "bytes": 173184878,
-      "filename": "Nexus-Setup.exe"
+      "filename": "Nexus-Setup.exe",
+      "bytes": 75508756,
+      "sha256": "8ebbbd66b4d6e4f64afe4e8ebecfa94edd00a8bfe1073cb2ee4468438356f693"
+    },
+    "portable": {
+      "filename": "Nexus-0.2.1-win-x64-portable.zip",
+      "bytes": 69927858,
+      "sha256": "b6cf58431cf3eb2382cd0b1bd92637ae631d7e7771aada2236828e872c595abb"
     }
   }
 }
